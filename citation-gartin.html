@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Citations.com</title>
+  <link rel="stylesheet" href="style-citation-paget.css">
+</head>
+<body>
+  <div class="container">
+    <div class="quote-box">
+      <p class="quote" id="quote">&#8220; &#8220;</p>
+      <p class="author">gartin59</p>
+      <a href="citations.html" class="back-btn">Retour au menu</a>
+    </div>
+  </div>
+
+
+  <script src="citations.js"></script>
+  <script>
+    
+   localStorage.getItem('generateQuote') ;
+
+    
+    
+    document.getElementById('quote').textContent = generateQuote('gartin');
+   
+  </script>
+</body>
+</html>

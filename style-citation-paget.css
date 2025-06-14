@@ -1,0 +1,64 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: 'Georgia', serif;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  overflow: hidden;
+}
+
+.container {
+  text-align: center;
+  padding: 30px;
+  max-width: 800px;
+  width: 90%;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  animation: fadeIn 1s ease forwards;
+}
+
+.quote-box .quote {
+  font-size: 2em;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.quote-box .author {
+  font-size: 1.3em;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.back-btn {
+  text-decoration: none;
+  background-color: white;
+  color: #2575fc;
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1em;
+  transition: transform 0.2s ease;
+}
+
+.back-btn:hover {
+  transform: scale(1.05);
+}
+
+/* Apparition douce */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
